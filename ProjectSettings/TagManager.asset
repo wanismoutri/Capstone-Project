@@ -7,6 +7,8 @@ TagManager:
   - Teleport
   - Hand
   - Jewels
+  - Silver
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX
@@ -14,10 +16,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Jewels
+  - Table
+  - Head
+  - Bag
   - 
   - 
   - 
