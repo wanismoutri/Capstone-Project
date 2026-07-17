@@ -9,6 +9,8 @@ TagManager:
   - Jewels
   - Silver
   - CinemachineTarget
+  - Diamonds
+  - Gold
   layers:
   - Default
   - TransparentFX
