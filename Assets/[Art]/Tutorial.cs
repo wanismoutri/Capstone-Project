@@ -16,6 +16,13 @@ public class Tutorial : MonoBehaviour
             robotAnimator.SetBool("Open_Anim", true);
         }
     }
+
+    public void StopTutorial()
+    {
+        npcAudio.Stop();
+        robotAnimator.SetBool("Open_Anim", false);
+        hasTriggered = true;
+    }
     // Start is called before the first frame update
     void Start()
     {

@@ -19,6 +19,8 @@ public class TimerStart : MonoBehaviour
     public ClosingWall silverWallRight;
     public ClosingWall keypad;
 
+    public Tutorial tutorialScript;
+
     private bool hasTriggered = false;
 
     private void OnTriggerEnter(Collider other)
@@ -26,6 +28,8 @@ public class TimerStart : MonoBehaviour
         if (!hasTriggered && other.CompareTag("Player"))
         {
             hasTriggered = true;
+
+            tutorialScript.StopTutorial();
 
             hissSound.Play();
             doorLeft.StartClosing();
