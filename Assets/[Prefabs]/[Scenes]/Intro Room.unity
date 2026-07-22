@@ -644,7 +644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Turn around for further instructions
+  m_text: Turn around for further instruction
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
+  m_TextStyleHashCode: 2427
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -770,7 +770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &141377634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2047,6 +2047,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 736418376142116000, guid: 66486dc6b29f94f17bb246a3aaf9a795,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2279217539161589546, guid: 66486dc6b29f94f17bb246a3aaf9a795,
         type: 3}
       propertyPath: MinDistance
@@ -2121,6 +2126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135068088036828216, guid: 66486dc6b29f94f17bb246a3aaf9a795,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7516237521175019138, guid: 66486dc6b29f94f17bb246a3aaf9a795,
         type: 3}
@@ -2351,7 +2361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &682542723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2383,8 +2393,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.047217, z: 1}
+  m_Center: {x: 0, y: 0.023608387, z: 0}
 --- !u!23 &682542725
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3359,7 +3369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scorePopup: {fileID: 141377633}
   scoreText: {fileID: 1652458887}
-  resetCube: {fileID: 0}
+  resetCube: {fileID: 682542722}
+  musicSource: {fileID: 695835998}
+  tickingSource: {fileID: 2031781524}
 --- !u!65 &1076452265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3824,6 +3836,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 9073905759072625015, guid: 0f537e1e026b34b6c9c6a4d12707bfd8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4537349
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073905759072625015, guid: 0f537e1e026b34b6c9c6a4d12707bfd8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.046
+      objectReference: {fileID: 0}
+    - target: {fileID: 9073905759072625015, guid: 0f537e1e026b34b6c9c6a4d12707bfd8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.089
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 509088845172571880, guid: 0f537e1e026b34b6c9c6a4d12707bfd8, type: 3}
@@ -4200,7 +4227,7 @@ MonoBehaviour:
   silverWallLeft: {fileID: 1257864000}
   silverWallRight: {fileID: 452359087}
   keypad: {fileID: 1940750357}
-  tutorialScript: {fileID: 0}
+  tutorialScript: {fileID: 638667153}
 --- !u!65 &1321866754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6513,8 +6540,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.0688759, z: 1}
+  m_Center: {x: 0, y: 0.03443796, z: 0}
 --- !u!23 &1861218026
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -8,14 +8,20 @@ public class VaultExit : MonoBehaviour
     public GameObject scorePopup;
     public TextMeshProUGUI scoreText;
     public GameObject resetCube;
+    public AudioSource musicSource;
+    public AudioSource tickingSource;
+    private bool hasTriggered = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && VaultEntry.hasEnteredVault)
+        if (!hasTriggered && other.CompareTag("Player") && VaultEntry.hasEnteredVault)
         {
+            hasTriggered = true;
             scorePopup.SetActive(true);
-            scoreText.text = "You escaped with " + bagscript.score + " points!";
+            scoreText.text = "You escaped with " + bagscript.score + " points! To restart, step on the red square.";
             resetCube.SetActive(true);
+            musicSource.Stop();
+            tickingSource.Stop();
         }
     }
     // Start is called before the first frame update
